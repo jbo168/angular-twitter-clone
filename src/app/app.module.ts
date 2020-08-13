@@ -8,6 +8,9 @@ import { PostsComponent } from './posts/posts.component';
 import { FeedComponent } from './feed/feed.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FeedItemComponent } from './feed/feed-list/feed-item/feed-item.component';
+import { FeedListComponent } from './feed/feed-list/feed-list.component';
+import { FeedService } from './feed/feed.service';
 
 @NgModule({
   declarations: [
@@ -15,14 +18,16 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     PostsComponent,
     FeedComponent,
-    ProfileComponent
+    ProfileComponent,
+    FeedItemComponent,
+    FeedListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [FeedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
