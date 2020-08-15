@@ -18,8 +18,4 @@ export class FeedListComponent implements OnInit {
     this.feed = this.feedService.getFeed();
   }
 
-  createNewPost() {
-    this.router.navigateByUrl('/posts/new');
-  }
-
 }
