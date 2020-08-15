@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "test-bootstrap-app"
+    }
+  },
+  "defaultProject": "test-bootstrap-app",
+  "cli": {
+    "analytics": false
+  }
 }
