@@ -12,6 +12,7 @@ import { FeedItemComponent } from './feed/feed-list/feed-item/feed-item.componen
 import { FeedListComponent } from './feed/feed-list/feed-list.component';
 import { FeedService } from './feed/feed.service';
 import { LikeButtonComponent } from './feed/feed-list/feed-item/like-button/like-button.component';
+import { FavouritesComponent } from './favourites/favourites.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LikeButtonComponent } from './feed/feed-list/feed-item/like-button/like
     ProfileComponent,
     FeedItemComponent,
     FeedListComponent,
-    LikeButtonComponent
+    LikeButtonComponent,
+    FavouritesComponent
   ],
   imports: [
     BrowserModule,
