@@ -29,7 +29,7 @@ import { FavouritesComponent } from './favourites/favourites.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [FeedService],
   bootstrap: [AppComponent]
