@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from '../../shared/post.model';
+import { Post } from '../../shared/model/post.model';
 import { FeedService } from '../feed.service';
 import { Router } from '@angular/router';
 

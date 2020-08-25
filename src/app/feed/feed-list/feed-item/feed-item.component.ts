@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Post } from 'src/app/shared/post.model';
+import { Post } from 'src/app/shared/model/post.model';
 
 @Component({
   selector: 'app-feed-item',

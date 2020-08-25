@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Post } from '../shared/post.model';
+import { Post } from '../shared/model/post.model';
 
 @Injectable()
 export class FeedService {
