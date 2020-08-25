@@ -13,15 +13,18 @@ import { FeedListComponent } from './feed/feed-list/feed-list.component';
 import { FeedService } from './feed/feed.service';
 import { LikeButtonComponent } from './feed/feed-list/feed-item/like-button/like-button.component';
 import { FavouritesComponent } from './favourites/favourites.component';
+import { FeedEditComponent } from './feed/feed-list/feed-edit/feed-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PostsComponent,
-    FeedComponent,
     ProfileComponent,
+    FeedComponent,
     FeedItemComponent,
+    FeedEditComponent,
     FeedListComponent,
     LikeButtonComponent,
     FavouritesComponent
@@ -30,6 +33,7 @@ import { FavouritesComponent } from './favourites/favourites.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [FeedService],
   bootstrap: [AppComponent]

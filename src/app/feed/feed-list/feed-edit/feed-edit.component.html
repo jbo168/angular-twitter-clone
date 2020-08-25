@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="feedForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+              <label for="postBody">Post Body</label>
+              <textarea
+                type="text"
+                id="postBody"
+                formControlName="postBody"
+                class="form-control"
+                rows="6"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+            <button
+                type="submit"
+                class="btn btn-success"
+                [disabled]="!feedForm.valid">Save</button> |
+            <button
+                type="button"
+                class="btn btn-danger"
+                (click)="onCancel()">Cancel</button>
+        </div>
+    </div>
+    </form>
+  </div>
+</div>
