@@ -1,4 +1,9 @@
 <div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-primary" (click)="createNewPost()">New Post</button>
+  </div>
+</div>
+<div class="row">
   <div class="col-md-5 pb-3">
     <app-feed-item
     *ngFor="let feedEl of feed; let i = index"

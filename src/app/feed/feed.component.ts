@@ -13,8 +13,4 @@ export class FeedComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createNewPost() {
-    this.router.navigateByUrl('/posts/new');
-  }
-
 }
