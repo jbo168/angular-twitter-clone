@@ -6,8 +6,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 
 const routes: Routes = [
-  { path: '', component: FeedComponent },
-  { path: 'feed', component: FeedComponent },
+  { path: '', redirectTo: '/feed', pathMatch: 'full' },
+  { path: 'feed', loadChildren: () => import('./feed/feed.module').then(m => m.FeedModule) },
   { path: 'posts', component: PostsComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'favourites', component: FavouritesComponent }
