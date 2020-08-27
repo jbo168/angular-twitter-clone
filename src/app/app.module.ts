@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FeedService } from './feed/feed.service';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CoreModule } from './core.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule,
+    CoreModule
   ],
-  providers: [FeedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

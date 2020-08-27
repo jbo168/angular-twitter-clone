@@ -16,7 +16,7 @@ import { FeedStartComponent } from './feed-start/feed-start.component';
     FeedEditComponent,
     FeedListComponent,
     LikeButtonComponent,
-    FeedStartComponent,
+    FeedStartComponent
   ],
   imports: [
     RouterModule,
@@ -28,7 +28,7 @@ import { FeedStartComponent } from './feed-start/feed-start.component';
     FeedItemComponent,
     FeedEditComponent,
     FeedListComponent,
-    LikeButtonComponent,
+    LikeButtonComponent
   ]
 })
 export class FeedModule {

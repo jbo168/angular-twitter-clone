@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { FeedComponent } from './feed/feed.component';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { PostsComponent } from './posts/posts.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 
-const routes: Routes = [
+
+const appRoutes: Routes = [
   { path: '', redirectTo: '/feed', pathMatch: 'full' },
   { path: 'feed', loadChildren: () => import('./feed/feed.module').then(m => m.FeedModule) },
   { path: 'posts', component: PostsComponent },
@@ -14,7 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
