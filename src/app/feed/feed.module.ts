@@ -7,6 +7,7 @@ import { LikeButtonComponent } from '../feed/feed-list/feed-item/like-button/lik
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FeedRoutingModule } from './feed-routing.module';
+import { FeedStartComponent } from './feed-start/feed-start.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FeedRoutingModule } from './feed-routing.module';
     FeedEditComponent,
     FeedListComponent,
     LikeButtonComponent,
+    FeedStartComponent,
   ],
   imports: [
     RouterModule,

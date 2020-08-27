@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../../shared/model/post.model';
 import { FeedService } from '../feed.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-feed-list',
@@ -12,14 +12,15 @@ export class FeedListComponent implements OnInit {
   feed: Post[];
 
   constructor(private feedService: FeedService,
-              private router: Router) { }
+              private router: Router,
+              private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.feed = this.feedService.getFeed();
   }
 
   createNewPost() {
-    this.router.navigateByUrl('/feed/new');
+    this.router.navigate(['new'], {relativeTo: this.route});
   }
 
 }
