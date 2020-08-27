@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FeedRoutingModule } from './feed-routing.module';
 import { FeedStartComponent } from './feed-start/feed-start.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FeedStartComponent } from './feed-start/feed-start.component';
   imports: [
     RouterModule,
     ReactiveFormsModule,
-    FeedRoutingModule
+    FeedRoutingModule,
+    SharedModule
   ],
   exports: [
     FeedComponent,
