@@ -9,7 +9,7 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/feed', pathMatch: 'full' },
   { path: 'feed', loadChildren: () => import('./feed/feed.module').then(m => m.FeedModule) },
   { path: 'posts', component: PostsComponent },
-  { path: 'profile', component: ProfileComponent },
+  { path: 'profile', loadChildren: () => import('./profile/profile.module').then(p => p.ProfileModule) },
   { path: 'favourites', component: FavouritesComponent }
 ];
 
