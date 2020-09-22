@@ -1,21 +1,26 @@
 <div class="container">
-  <div class="row pt-3">
-    <div class="col-xs-12">
-      <div class="card" style="width: 18rem;">
-        <div class="card-header bg-primary text-white">
-          Featured
+  <div class="row">
+    <div class="col-md-5">
+      <div class="row pt-3">
+        <div class="col-xs-12">
+          <div class="card" style="width: 18rem">
+            <div class="card-header bg-primary text-white">User Details</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Username :</li>
+              <li class="list-group-item">First Name :</li>
+              <li class="list-group-item">Last Name :</li>
+            </ul>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 pt-3">
+          <button class="btn btn-primary" (click)="editProfileDetails()">Edit profile</button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 pt-3">
-      <button class="btn btn-primary" (click)="editProfileDetails()">Edit profile</button>
+    <div class="col-md-7">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
