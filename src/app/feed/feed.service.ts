@@ -18,11 +18,11 @@ export class FeedService {
   ];
 
 
-  getFeed() {
+  getFeed(): Post[] {
     return this.feed.slice();
   }
 
-  getPostFromFeed(index: number) {
+  getPostFromFeed(index: number): Post {
     return this.feed[index];
   }
 
